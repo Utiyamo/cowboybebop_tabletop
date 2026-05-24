@@ -1,6 +1,5 @@
 "use server";
 
-import { ApplicationProps } from "@/entities/applicationProps";
 import { AuthResult } from "@/entities/types/auth";
 import { ResultState } from "@/entities/types/baseResult";
 import authService from "@/services/authService";
