@@ -110,8 +110,8 @@ export class TokenService {
   }
 
   // 🔽 Utilitários internos (URL-safe Base64)
-  private toBase64Url(buffer: ArrayBuffer): string {
-    const bytes = new Uint8Array(buffer);
+  private toBase64Url(buffer: ArrayBuffer | Uint8Array): string {
+    const bytes = buffer instanceof Uint8Array ? buffer : new Uint8Array(buffer);
     let binary = '';
     for (let i = 0; i < bytes.byteLength; i++) binary += String.fromCharCode(bytes[i]);
     return globalThis.btoa(binary)

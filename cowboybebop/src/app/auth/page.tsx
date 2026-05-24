@@ -1,4 +1,4 @@
-import AuthForm from './form.tsx';
+import AuthForm from './form';
 
 export default async function AuthPage() {
 
