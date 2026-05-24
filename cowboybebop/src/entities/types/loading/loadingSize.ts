@@ -1,0 +1,1 @@
+export type LoadingSize = 'sm' | 'md' | 'lg';
