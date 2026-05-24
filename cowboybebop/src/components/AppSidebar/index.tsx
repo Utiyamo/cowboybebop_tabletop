@@ -29,7 +29,7 @@ export function AppSidebar({ initialCollapsed }: AppSidebarProps) {
     // ⚠️ Se seu authToken for httpOnly, use uma Server Action aqui para limpar.
     // Exemplo simplificado para cookies acessíveis via JS:
     document.cookie = 'authToken=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/;';
-    router.push('/login');
+    router.push('/');
   };
 
   const navItems = [
