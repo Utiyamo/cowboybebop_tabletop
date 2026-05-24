@@ -23,7 +23,7 @@ export default async function SecureLayout({
     cookieStore.get("sidebar_collapsed")?.value === "true";
 
   if (result == null) {
-    redirect("/login");
+    redirect("/auth");
   }
 
   return (
